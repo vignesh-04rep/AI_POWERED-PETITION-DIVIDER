@@ -1,0 +1,8 @@
+complaint_text,predicted_category,predicted_department,predicted_urgency
+The water supply in our neighborhood is irregular and needs to be fixed urgently,Infrastructure,Public Works,Medium Urgency
+The road in our neighborhood is in terrible condition and needs urgent repair,Public Transportation,Energy Department,High Urgency
+"There is a water scarcity issue in the region, urgent attention is needed.",Education,Public Health,Low Urgency
+The road in our neighborhood is in terrible condition and needs urgent repair,Infrastructure,Public Works,High Urgency
+The road in our neighborhood is in terrible condition and needs urgent repair.,Infrastructure,Public Works,High Urgency
+The local hospital is overcrowded and lacks resources!,Health,Public Health,Medium Urgency
+SAMPLE TEST,Public Safety,Public Safety Department,Medium Urgency

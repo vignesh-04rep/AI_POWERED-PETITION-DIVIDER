@@ -1,0 +1,5 @@
+complaint_text,predicted_category,predicted_department,predicted_urgency
+The water supply in our neighborhood is irregular and needs to be fixed urgently,Public Transportation,Public Health,Medium Urgency
+"Our hospital is understaffed, and patients have to wait for hours for treatment.",Energy,Public Health,Medium Urgency
+The water supply in the office building is inconsistent and needs urgent attention,Environment,Waste Management,Low Urgency
+The water supply in the office building is inconsistent and needs urgent attention,Environment,Waste Management,Low Urgency

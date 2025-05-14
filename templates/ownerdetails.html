@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<!--
+Template Name: Abele
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>AI Petition Collection</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+<!--
+.style9 {color: #008AED}
+.style11 {
+	font-size: 24px;
+	color: #0099CC;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top; box-sizing:border-box;}
+table, th{table-layout:auto;}
+table{margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+th{color:#FFFFFF; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+@media screen and (min-width:180px) and (max-width:500px) {
+	#featuredpost figcaption .shortintro{display:none;}
+	#intro{padding:80px 0 50px;}
+	#breadcrumb{padding:20px 0;}
+	#latestposts li figure{float:none; margin:0 0 20px 0;}
+	.container{padding:50px 0;}
+	#cta{padding:50px 0 20px;}
+	}
+	@media screen and (max-width:650px) {
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+}
+.style19 {color: #FFFFFF; font-family: "Times New Roman", Times, serif; font-size: 20px; }
+.style22 {color: #000000; font-family: "Times New Roman", Times, serif; font-size: 16px; }
+-->
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    
+    <div class="fl_right">
+      <ul class="nospace linklist">
+       
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="l">AI Petition Collection</a></h1>
+    </div>
+    <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
+      
+        <li><a href="adminhome.php">Home</a></li>
+        <li  class="active"><a href="ownerdetails.php">Owner Details</a></li>
+        <li><a href="View.php">View</a></li>
+		<li><a href="index.php">Logout</a></li>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2 bgded" style="background-image:url('images/demo/backgrounds/1.jpg');">
+  <div class="overlay">
+    <div id="breadcrumb" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">AI Petition Collection </a></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+   <main class="container clear" style="background-color:#FFE4E1; opacity: 0.8;">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1>&nbsp;</h1>
+      <p>&nbsp;</p>
+      <div class="scrollable">
+        <form name="form1" method="post" action="">
+		<div align="center">
+		  <p class="content style11">User Details </p>
+		  <table width="80%" border="0">
+            <tr>
+              <td height="41" bgcolor="#333333"><div align="center" class="style19">Sl.NO</div></td>
+              <td bgcolor="#333333"><div align="center" class="style19">Name </div></td>
+              <td bgcolor="#333333"><div align="center" class="style19">Address</div></td>
+              <td bgcolor="#333333"><div align="center" class="style19">Phone Number  </div></td>
+              <td bgcolor="#333333"><div align="center" class="style19">Email Id </div></td>
+              <td bgcolor="#333333"><div align="center" class="style19">Server Details  </div></td>
+            </tr>
+			<?php
+			$i=1;
+			$qr=mysql_query("select * from register");
+			while($row=mysql_fetch_array($qr))
+			{
+			?>
+            <tr>
+              <td height="45"><div align="center" class="style22"><?php echo $i;?></div></td>
+              <td><div align="center" class="style22"><?php echo $row['name'];?></div></td>
+              <td><div align="center" class="style22"><?php echo $row['address'];?></div></td>
+              <td><div align="center" class="style22"><?php echo $row['email'];?></div></td>
+              <td><div align="center" class="style22"><?php echo $row['pnumber'];?></div></td>
+              <td><div align="center" class="style22"><?php echo $row['sname'];?></div></td>
+            </tr>
+			<?php
+			$i++;
+			}
+			?>
+          </table>
+		  <p>&nbsp;</p>
+		</div>
+        </form>
+      </div>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <section id="cta" class="clear"> 
+    <!-- ################################################################################################ --><!-- ################################################################################################ -->
+</section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+</footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row6">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script> 
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition Analysis</title>
+</head>
+<body>
+    <h1>Petition Analysis</h1>
+
+    <!-- Petition form -->
+    <form method="POST">
+        <label for="petition">Enter your petition:</label><br><br>
+        <textarea id="petition" name="petition" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Analyze Petition">
+    </form>
+
+    {% if petition %}
+        <h2>Results</h2>
+        <p><strong>Petition:</strong> {{ petition }}</p>
+        <p><strong>Category:</strong> {{ category }}</p>
+        <p><strong>Sentiment:</strong> {{ sentiment }}</p>
+        <p><strong>Urgency:</strong> {{ urgency }}</p>
+    {% endif %}
+</body>
+</html>
